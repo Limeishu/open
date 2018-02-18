@@ -1,3 +1,8 @@
 .spotlight {
   min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
 }
