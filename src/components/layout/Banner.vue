@@ -14,12 +14,13 @@
   import { mapGetters } from 'vuex'
   export default {
     computed: {
-      ...mapGetters(['scrollHeight'])
+      ...mapGetters(['scrollHeight', 'deviceHeight'])
     },
     methods: {
       animate (index) {
+        let height = this.scrollHeight < -this.deviceHeight ? -this.deviceHeight : this.scrollHeight
         let x = -Math.cos(index / 30 * Math.PI) * 600
-        let y = 2 * (this.scrollHeight) * Math.cos(index)
+        let y = 2 * height * Math.cos(index)
         let z = Math.sin(index / 30 * Math.PI) * 600 * Math.cos(index)
         return `${x}px, ${y}px, ${z}px`
       }

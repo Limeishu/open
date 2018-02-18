@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex' 
+  import { mapGetters, mapActions } from 'vuex'
   import layout from '@/components/layout'
   export default {
     components: layout,

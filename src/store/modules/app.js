@@ -4,7 +4,8 @@ const state = {
   device: {
     isMobile: false,
     isTablet: false,
-    scrollHeight: 0
+    scrollHeight: 0,
+    height: window.innerHeight
   },
   navbar: {
     opened: false,
@@ -17,7 +18,8 @@ const state = {
 
 const getters = {
   language: state => state.language,
-  scrollHeight: state => state.device.scrollHeight
+  scrollHeight: state => state.device.scrollHeight,
+  deviceHeight: state => state.device.height
 }
 
 const mutations = {
