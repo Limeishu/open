@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
+
 /*
 * Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
  */
@@ -74,4 +76,14 @@ span {
       font-weight: 400;
     }
   }
+}
+
+.slab {
+  font-family: 'Zilla Slab', serif;
+}
+
+.tag {
+  font-family: 'Zilla Slab', 'Noto Sans TC', serif;
+  color: $white;
+  background-color: $black;
 }
