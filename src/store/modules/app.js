@@ -3,7 +3,8 @@ import * as types from '../mutation-types'
 const state = {
   device: {
     isMobile: false,
-    isTablet: false
+    isTablet: false,
+    scrollHeight: 0
   },
   navbar: {
     opened: false,
@@ -15,7 +16,8 @@ const state = {
 }
 
 const getters = {
-  language: state => state.language
+  language: state => state.language,
+  scrollHeight: state => state.device.scrollHeight
 }
 
 const mutations = {
@@ -27,6 +29,10 @@ const mutations = {
   [types.TOGGLE_NAVBAR] (state, status) {
     state.navbar.opened = typeof status.opened !== 'undefined' ? status.opened : state.navbar.opened
     state.navbar.hidden = typeof status.hidden !== 'undefined' ? status.hidden : state.navbar.hidden
+  },
+
+  [types.SCROLL_HEIGHT] (state, height) {
+    state.device.scrollHeight = height
   }
 }
 
@@ -38,6 +44,10 @@ const actions = {
 
   async toggleDevice ({ commit }, device) {
     commit(types.TOGGLE_DEVICE, device)
+  },
+
+  async setScrollHeight ({ commit }, height) {
+    commit(types.SCROLL_HEIGHT, height)
   },
 
   expandMenu ({ commit },

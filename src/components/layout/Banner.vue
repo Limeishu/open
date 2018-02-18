@@ -11,25 +11,17 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   export default {
-    data () {
-      return {
-        scrollHeight: 0
-      }
-    },
-    mounted () {
-      window.addEventListener('scroll', this.scroll)
+    computed: {
+      ...mapGetters(['scrollHeight'])
     },
     methods: {
       animate (index) {
         let x = -Math.cos(index / 30 * Math.PI) * 600
         let y = 2 * (this.scrollHeight) * Math.cos(index)
         let z = Math.sin(index / 30 * Math.PI) * 600 * Math.cos(index)
-        // let z = 0
         return `${x}px, ${y}px, ${z}px`
-      },
-      scroll () {
-        this.scrollHeight = document.querySelector('#app').getBoundingClientRect().y
       }
     }
   }

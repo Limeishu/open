@@ -4,6 +4,8 @@ export const TOGGLE_NAVBAR = 'TOGGLE_NAVBAR'
 
 export const EXPAND_MENU = 'EXPAND_MENU'
 
+export const SCROLL_HEIGHT = 'SCROLL_HEIGHT'
+
 export default {
   SET_USER: (state, user) => {
     state.user = user

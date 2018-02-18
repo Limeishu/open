@@ -6,9 +6,22 @@
 </template>
 
 <script>
+  import { mapGetters, mapActions } from 'vuex' 
   import layout from '@/components/layout'
   export default {
-    components: layout
+    components: layout,
+    computed: {
+      ...mapGetters(['scrollHeight'])
+    },
+    mounted () {
+      window.addEventListener('scroll', this.scroll)
+    },
+    methods: {
+      ...mapActions(['setScrollHeight']),
+      async scroll () {
+        await this.setScrollHeight(document.querySelector('#app').getBoundingClientRect().y)
+      }
+    }
   }
 </script>
 
