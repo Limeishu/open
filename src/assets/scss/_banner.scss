@@ -1,0 +1,54 @@
+.banner {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: $gray;
+  .bubble-container {
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: translate(-12%, calc(50% - 90px));
+    .bubble {
+      top: 0;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 1pt 1pt 2pt rgba($black, .5);
+      position: absolute;
+      background: linear-gradient($blue, $dark-blue);
+      // &:nth-child(odd) {
+      //   background: linear-gradient($blue-green, $blue);
+      // }
+      // &:nth-child(even) {
+      //   background: linear-gradient($blue, $dark-blue);
+      // }
+    }
+  }
+  header {
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-weight: 100;
+      font-size: 96pt;
+      color: $white;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 18pt;
+      color: $white;
+      span {
+        padding: 0 5px;
+      }
+    }
+  }
+}
