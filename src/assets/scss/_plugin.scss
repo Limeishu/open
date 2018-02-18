@@ -1,0 +1,28 @@
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  width: 50%;
+  h1 {
+    font-size: 40pt;
+    margin-bottom: 2rem;
+    .tag {
+      padding: 0 10px;
+    }
+  }
+  p {
+    font-size: 12pt;
+    line-height: 27pt;
+    letter-spacing: 2px;
+    color: $content;
+  }
+}
+
+.link {
+  margin: 2rem 0;
+  color: inherit;
+  text-decoration: none;
+  span {
+    margin-right: 1rem;
+  }
+}
