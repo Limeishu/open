@@ -1,0 +1,7 @@
+{
+  "apps": [{
+    "name": "Open-LMS",
+    "script": "./server/index.js",
+    "watch": true
+  }]
+}
