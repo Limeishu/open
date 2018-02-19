@@ -1,6 +1,9 @@
-# open
+# 李梅樹紀念館開源 x 文史頁面
 
-> A Vue.js project
+![Build Status](https://jenkins.limeishu.org.tw/job/open/job/master/badge/icon)
+
+> Li Mei-Shu Memorial Gallery Official Website based on Vue.js.
+
 
 ## Build Setup
 
