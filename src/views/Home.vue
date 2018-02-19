@@ -5,22 +5,127 @@
       <div class="paragraph">
         <h1><span class="tag">開源</span>，一種生活態度</h1>
         <p>
-          開源一詞是"開放原始碼"的簡稱，<br/>
+          開源一詞是「開放原始碼」的簡稱，<br/>
           英文稱為「Open Source」。<br/>
           原指透過開放程式的程式碼公開給使用者做修改，<br/>
           看似僅用在軟體開發上，<br/>
           但其實它也可以在藝術、文化與歷史上被應用。
         </p>
-        <router-link to="" v-scroll-to="'#project, 50px'" class="link"><span>一起參與李梅樹紀念館的開源專案</span><font-awesome-icon icon="angle-right" /></router-link>
+        <router-link to="" v-scroll-to="'#project, 0px'" class="link"><span>一起參與李梅樹紀念館的開源專案</span><font-awesome-icon icon="angle-right" /></router-link>
       </div>
     </div>
-    <div id="project" class="spotlight"></div>
+    <div id="project" class="spotlight has-bg blue">
+      <h1>我們的開源專案</h1>
+      <div class="card-container">
+        <div class="card" v-for="(item, i) in project" :key="i">
+          <div class="image" v-if="item.meta" :style="{ 'background-image': `url(${item.meta.image})` }"></div>
+          <div class="content">
+            <h2>{{ item.name }}</h2>
+            <p>{{ item.content }}</p>
+            <router-link :to="item.meta.link" class="link"><span>了解更多</span><font-awesome-icon icon="angle-right" /></router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="team" class="spotlight has-bg">
+      <header>
+        <h1>我們的團隊</h1>
+        <p>
+          我們是一群熱愛資訊的學生，<br>
+          因為一個契機，我們今天在李梅樹紀念館，把新的資訊技術回饋給地方。
+        </p>
+      </header>
+      <div class="people-container">
+        <div class="people" v-for="(item, i) in people" :key="i">
+          <div class="image" :style="{ 'background-image': `url(${item.meta.image})` }"></div>
+          <div class="content">
+            <div class="link-bar">
+              <a :href="item.url" :class="item.icon[1]" target="_blank" class="icon" v-for="(item, i) in item.link" :key="i">
+                <font-awesome-icon :icon="item.icon" />
+              </a>
+            </div>
+            <h2>{{ item.name }}</h2>
+            <p>{{ item.content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
   import layout from '@/components/layout'
   export default {
+    data () {
+      return {
+        project: [
+          {
+            name: '新版李梅樹官方網站',
+            content: '利用 Vue.js 為框架打造的紀念館網站，擁有良好的多重裝置支援性、高效率與瀏覽速度。我們的網站原始碼完全開源，歡迎多加利用。',
+            meta: {
+              image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
+              link: ''
+            }
+          },
+          {
+            name: '新版李梅樹官方網站',
+            content: '利用 Vue.js 為框架打造的紀念館網站，擁有良好的多重裝置支援性、高效率與瀏覽速度。我們的網站原始碼完全開源，歡迎多加利用。',
+            meta: {
+              image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
+              link: ''
+            }
+          },
+          {
+            name: '新版李梅樹官方網站',
+            content: '利用 Vue.js 為框架打造的紀念館網站，擁有良好的多重裝置支援性、高效率與瀏覽速度。我們的網站原始碼完全開源，歡迎多加利用。',
+            meta: {
+              image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
+              link: ''
+            }
+          },
+          {
+            name: '新版李梅樹官方網站',
+            content: '利用 Vue.js 為框架打造的紀念館網站，擁有良好的多重裝置支援性、高效率與瀏覽速度。我們的網站原始碼完全開源，歡迎多加利用。',
+            meta: {
+              image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
+              link: ''
+            }
+          }
+        ],
+        people: [
+          {
+            name: 'EU｜王文岳',
+            content: '現任李梅樹紀念館資訊組召集人、大安高工電腦研究社客座老師、中崙高中資訊研習社指導老師。在館內負責專案接洽、行政作業程序處理、館內硬體設備規劃與採購。',
+            meta: {
+              image: 'https://scontent.ftpe8-1.fna.fbcdn.net/v/t31.0-8/16113442_1235531449887223_2118361413768991004_o.jpg?oh=8b6ee1f700aadfe3d214d57a63cbe73d&oe=5B0C8EF7'
+            },
+            link: [
+              {
+                icon: ['fab', 'facebook-f'],
+                url: 'https://www.facebook.com/allen.wang.1675'
+              }
+            ]
+          },
+          {
+            name: 'Aries Cs｜白羊',
+            content: '現任李梅樹紀念館資訊組 RD、中崙高中資訊研習社網頁設計專任講師。負責李梅樹紀念館相關官方網站之開發、設計、規劃與伺服器維護等工作。',
+            meta: {
+              image: 'https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.0-9/27751482_1253405574803807_3793360616927583632_n.jpg?oh=d02a0a60126e63bbdec11141e0acf1e3&oe=5B4DE2CB'
+            },
+            link: [
+              {
+                icon: ['fab', 'facebook-f'],
+                url: 'https://www.facebook.com/aries0d0f'
+              },
+              {
+                icon: ['fab', 'github'],
+                url: 'https://github.com/Aries0d0f'
+              }
+            ]
+          }
+        ]
+      }
+    },
     components: layout
   }
 </script>
