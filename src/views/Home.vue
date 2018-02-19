@@ -22,7 +22,7 @@
           <div class="content">
             <h2>{{ item.name }}</h2>
             <p>{{ item.content }}</p>
-            <router-link :to="item.meta.link" class="link"><span>了解更多</span><font-awesome-icon icon="angle-right" /></router-link>
+            <a :href="item.meta.link" target="_blank" class="link"><span>{{ item.meta.link ? '了解更多' : '敬請期待' }}</span><font-awesome-icon icon="angle-right" /></a>
           </div>
         </div>
       </div>
@@ -64,28 +64,28 @@
             content: '利用 Vue.js 為框架打造的紀念館網站，擁有良好的多重裝置支援性、高效率與瀏覽速度。我們的網站原始碼完全開源，歡迎多加利用。',
             meta: {
               image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
-              link: ''
+              link: 'https://github.com/Limeishu/limeishu.org'
             }
           },
           {
-            name: '新版李梅樹官方網站',
-            content: '利用 Vue.js 為框架打造的紀念館網站，擁有良好的多重裝置支援性、高效率與瀏覽速度。我們的網站原始碼完全開源，歡迎多加利用。',
+            name: 'LMS API',
+            content: '採用輕巧 Koa 框架與 MongoDB 打造的紀念館 API，尊照 RESTful 風格、簡單易用。我們的原始碼完全開源，歡迎多加利用。',
             meta: {
               image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
-              link: ''
+              link: 'https://github.com/Limeishu/LMS-API'
             }
           },
           {
-            name: '新版李梅樹官方網站',
-            content: '利用 Vue.js 為框架打造的紀念館網站，擁有良好的多重裝置支援性、高效率與瀏覽速度。我們的網站原始碼完全開源，歡迎多加利用。',
+            name: '維基館藏數位開放專案計畫',
+            content: '李梅樹紀念館維基館藏數位開放專案為李梅樹紀念館與社團法人中華民國維基媒體協會共同合作，踏出台灣館聯計畫(GLAM program)的第一步。',
             meta: {
-              image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
-              link: ''
+              image: 'https://api.limeishu.org.tw/images/2018/02/19/94bf8b93-bc7d-4e30-8422-68b35ce32276.jpg',
+              link: 'https://limeishu.org.tw/culture/news/5a8a404d34c8a8787241bb56/index.html'
             }
           },
           {
-            name: '新版李梅樹官方網站',
-            content: '利用 Vue.js 為框架打造的紀念館網站，擁有良好的多重裝置支援性、高效率與瀏覽速度。我們的網站原始碼完全開源，歡迎多加利用。',
+            name: 'LMS Open Design',
+            content: '整合 Google Material Design、Apple Human Interface 及 Mozilla Open Desin 並取其精髓加以優化，創造了 LMS Open Desin。我們將其整理、條列化後加以說明，歡迎多加利用。',
             meta: {
               image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
               link: ''
@@ -103,6 +103,10 @@
               {
                 icon: ['fab', 'facebook-f'],
                 url: 'https://www.facebook.com/allen.wang.1675'
+              },
+              {
+                icon: ['fab', 'github'],
+                url: 'https://github.com/Allenwang6212'
               }
             ]
           },
@@ -120,6 +124,23 @@
               {
                 icon: ['fab', 'github'],
                 url: 'https://github.com/Aries0d0f'
+              }
+            ]
+          },
+          {
+            name: 'Monica｜咪咕',
+            content: '現任李梅樹紀念館資訊組 IT。負責李梅樹紀念館資訊組行政及活動協助、IT 業務、數位化專案監督等工作。',
+            meta: {
+              image: 'https://scontent.ftpe8-1.fna.fbcdn.net/v/t31.0-1/c0.0.958.958/19477555_1580127475365979_7900776341378084394_o.jpg?oh=3945ab72a0cf6fa86bdb066edacd858b&oe=5B1C7AE8'
+            },
+            link: [
+              {
+                icon: ['fab', 'facebook-f'],
+                url: 'https://www.facebook.com/monica2014939'
+              },
+              {
+                icon: ['fab', 'github'],
+                url: 'https://github.com/MonicaMigu'
               }
             ]
           }
