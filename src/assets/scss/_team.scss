@@ -1,5 +1,8 @@
 #team {
   flex-direction: row;
+  @media screen and (max-width: 1280px) {
+    flex-direction: column;
+  }
   header {
     height: 100%;
     padding: 2rem 4rem;
@@ -15,5 +18,8 @@
   .people-container {
     width: 80%;
     height: 100%;
+    @media screen and (max-width: 1280px) {
+      width: 100%;
+    }
   }
 }

@@ -10,6 +10,9 @@
     height: 100%;
     width: 100%;
     transform: translate(-12%, calc(50% - 90px));
+    @media screen and (max-width: 1280px) {
+      transform: translate(-50%, calc(50% - 90px));
+    }
     .bubble {
       top: 0;
       height: 150px;
@@ -22,24 +25,27 @@
   }
   header {
     z-index: 1;
-    height: 100vh;
-    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 100%;
+    width: calc(100% - 2rem);
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
     h1 {
       font-weight: 100;
       font-size: 96pt;
       color: $white;
+      @media screen and (max-width: 1280px) {
+        font-size: 80pt;
+      }
     }
     p {
       margin-top: 1rem;
       font-size: 18pt;
       color: $white;
+      line-height: 32pt;
       span {
         padding: 0 5px;
       }
