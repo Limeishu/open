@@ -77,8 +77,11 @@
     margin: 2rem;
     background: linear-gradient(to bottom right, rgba($white, .1), rgba($white, .2) 90%);
     box-shadow: 1pt 1pt 2pt rgba($black, .5);
+    width: calc(25% - 4rem);
     .image {
       height: 200px;
+      background-size: cover;
+      background-position: center;
     }
     .content {
       padding: 10pt;
