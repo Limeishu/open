@@ -1,0 +1,19 @@
+#team {
+  flex-direction: row;
+  header {
+    height: 100%;
+    padding: 2rem 4rem;
+    h1 {
+      margin: 2rem 0;
+    }
+    p {
+      line-height: 23pt;
+      font-size: 12pt;
+      color: $content;
+    }
+  }
+  .people-container {
+    width: 80%;
+    height: 100%;
+  }
+}

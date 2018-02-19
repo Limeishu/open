@@ -3,6 +3,12 @@
   flex-direction: column;
   padding: 4rem 2rem;
   width: 50%;
+  &.center {
+    align-items: center;
+  }
+  &.white {
+    color: $white;
+  }
   h1 {
     font-size: 40pt;
     margin-bottom: 2rem;
@@ -20,12 +26,6 @@
 
 .link {
   margin: 2rem 0;
-  color: inherit;
-  text-decoration: none;
-  span {
-    margin-right: 1rem;
-  }
-} margin: 2rem 0;
   color: inherit;
   text-decoration: none;
   span {
@@ -66,5 +66,96 @@
     animation: downArrow 2s infinite;
     width: 108pt;
     height: 50pt;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  .card {
+    margin: 2rem;
+    background: linear-gradient(to bottom right, rgba($white, .1), rgba($white, .2) 90%);
+    box-shadow: 1pt 1pt 2pt rgba($black, .5);
+    .image {
+      height: 200px;
+    }
+    .content {
+      padding: 10pt;
+      h2 {
+        margin: 10pt 0;
+      }
+      p {
+        line-height: 23pt;
+        font-size: 12pt;
+        margin: 10pt 0;
+      }
+    }
+  }
+}
+
+.people-container {
+  display: flex;
+  flex-wrap: wrap;
+  .people {
+    display: flex;
+    flex-direction: column;
+    margin: 10pt;
+    .image {
+      z-index: 1;
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      border-radius: 50%;
+      box-shadow: 1pt 1pt 2pt rgba($black, .5);
+    }
+    .content {
+      z-index: 0;
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient($blue, $dark-blue);
+      padding: 10pt;
+      color: $white;
+      transform: translate(20pt, -40pt);
+      >* {
+        text-align: center;
+      }
+      h2 {
+        margin: 10pt 0;
+      }
+      p {
+        line-height: 23pt;
+        font-size: 12pt;
+      }
+      .link-bar {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: calc((2.5rem + 10pt) * 3);
+        .icon {
+          font-size: 1.5rem;
+          color: $white;
+          margin: .5rem;
+          height: 1.5rem;
+          width: 1.5rem;
+          border-radius: 50%;
+          padding: 5pt;
+          box-shadow: 1pt 1pt 2pt rgba($black, .5);
+          &.facebook-f {
+            background-color: $facebook;
+          }
+          &.github {
+            background: $black;
+          }
+        }
+      }
+    }
   }
 }
