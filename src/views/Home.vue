@@ -63,7 +63,7 @@
             name: '新版李梅樹官方網站',
             content: '利用 Vue.js 為框架打造的紀念館網站，擁有良好的多重裝置支援性、高效率與瀏覽速度。我們的網站原始碼完全開源，歡迎多加利用。',
             meta: {
-              image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
+              image: 'https://image.limeishu.org.tw/assets/css/images/code.jpg',
               link: 'https://github.com/Limeishu/limeishu.org'
             }
           },
@@ -71,7 +71,7 @@
             name: 'LMS API',
             content: '採用輕巧 Koa 框架與 MongoDB 打造的紀念館 API，尊照 RESTful 風格、簡單易用。我們的原始碼完全開源，歡迎多加利用。',
             meta: {
-              image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
+              image: 'https://image.limeishu.org.tw/assets/css/images/code.jpg',
               link: 'https://github.com/Limeishu/LMS-API'
             }
           },
@@ -87,7 +87,7 @@
             name: 'LMS Open Design',
             content: '整合 Google Material Design、Apple Human Interface 及 Mozilla Open Desin 並取其精髓加以優化，創造了 LMS Open Desin。我們將其整理、條列化後加以說明，歡迎多加利用。',
             meta: {
-              image: 'https://open.limeishu.org.tw/assets/css/images/code.jpg',
+              image: 'https://image.limeishu.org.tw/images/code.jpg',
               link: ''
             }
           }
