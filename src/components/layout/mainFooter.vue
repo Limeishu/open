@@ -8,7 +8,7 @@
         <li v-for="(link, i) in socialLink" :key="i"><a target="_blank" :href="link.href"><font-awesome-icon :icon="link.icon" /></a></li>
       </ul>
       <div class="policy">
-        <router-link v-for="item in policy[language]" :to="item.link" :key="item.name">{{ item.name }}</router-link>
+        <a v-for="item in policy[language]" target="_blank" :href="item.link" :key="item.name">{{ item.name }}</a>
       </div>
     </div>
     <div class="copyright" v-html="copyright[language]"></div>
