@@ -84,13 +84,21 @@
             }
           },
           {
-            name: 'LMS Open Design',
-            content: '整合 Google Material Design、Apple Human Interface 及 Mozilla Open Desin 並取其精髓加以優化，創造了 LMS Open Desin。我們將其整理、條列化後加以說明，歡迎多加利用。',
+            name: 'LCMS',
+            content: '全新設計、基於 Vuejs 打造的內容管理系統，高效能、高安全性、支援文檔編輯即時預覽。我們的原始碼完全開源，歡迎多加利用。',
             meta: {
-              image: 'https://image.limeishu.org.tw/images/code.jpg',
-              link: ''
+              image: 'https://api.limeishu.org.tw/images/2018/05/06/03a42017-33f9-458e-9d55-313c4ed8e34c.jpg',
+              link: 'https://github.com/Limeishu/LCMS'
             }
           }
+          // {
+          //   name: 'LMS Open Design',
+          //   content: '整合 Google Material Design、Apple Human Interface 及 Mozilla Open Desin 並取其精髓加以優化，創造了 LMS Open Desin。我們將其整理、條列化後加以說明，歡迎多加利用。',
+          //   meta: {
+          //     image: 'https://image.limeishu.org.tw/images/code.jpg',
+          //     link: ''
+          //   }
+          // }
         ],
         people: [
           {
