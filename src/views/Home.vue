@@ -105,7 +105,7 @@
             name: 'EU｜王文岳',
             content: '現任李梅樹紀念館資訊組召集人、大安高工電腦研究社客座老師、中崙高中資訊研習社指導老師。在館內負責專案接洽、行政作業程序處理、館內硬體設備規劃與採購。',
             meta: {
-              image: 'https://scontent.ftpe8-1.fna.fbcdn.net/v/t31.0-8/16113442_1235531449887223_2118361413768991004_o.jpg?oh=8b6ee1f700aadfe3d214d57a63cbe73d&oe=5B0C8EF7'
+              image: 'https://i.imgur.com/h0xf6ew.jpg'
             },
             link: [
               {
@@ -122,7 +122,7 @@
             name: 'Aries Cs｜白羊',
             content: '現任李梅樹紀念館資訊組 RD、中崙高中資訊研習社網頁設計專任講師。負責李梅樹紀念館相關官方網站之開發、設計、規劃與伺服器維護等工作。',
             meta: {
-              image: 'https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.0-9/27751482_1253405574803807_3793360616927583632_n.jpg?oh=d02a0a60126e63bbdec11141e0acf1e3&oe=5B4DE2CB'
+              image: 'https://i.imgur.com/QnYZZgw.jpg'
             },
             link: [
               {
@@ -139,7 +139,7 @@
             name: 'Monica｜咪咕',
             content: '現任李梅樹紀念館資訊組 IT。負責李梅樹紀念館資訊組行政及活動協助、IT 業務、數位化專案監督等工作。',
             meta: {
-              image: 'https://scontent.ftpe8-1.fna.fbcdn.net/v/t31.0-1/c0.0.958.958/19477555_1580127475365979_7900776341378084394_o.jpg?oh=3945ab72a0cf6fa86bdb066edacd858b&oe=5B1C7AE8'
+              image: 'https://i.imgur.com/p0M7DwM.jpg'
             },
             link: [
               {
