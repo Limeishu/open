@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
     <div class="icon">
-      <div class="logo">
+      <div class="logo" @click="openMainSite()">
         <img src="../../assets/images/icons/logo-min.svg" alt="">
       </div>
       <ul>
@@ -89,6 +89,11 @@ export default {
         'en-US': `<p>© 1995 - ${new Date().getFullYear()} Li Mei-shu Memorial Gallery</p><p>This work is licensed under the <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/beta/LICENSE" target="_blank">MIT License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> for a better browsing experience.</p>`,
         'ja': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹記念館</p><p>この作品は、<a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/beta/LICENSE" target="_blank">MIT ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> をお勧めします。</p>`
       }
+    }
+  },
+  methods: {
+    openMainSite() {
+      window.open('https://limeishu.org.tw')
     }
   }
 }

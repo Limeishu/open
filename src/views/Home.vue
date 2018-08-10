@@ -29,7 +29,8 @@
     </div>
     <div id="team" class="spotlight has-bg">
       <header>
-        <h1>我們的團隊</h1>
+        <img src="../assets/images/logo.jpeg" alt="">
+        <h1>LIT 李梅樹紀念館資訊組</h1>
         <p>
           我們是一群熱愛資訊的學生，<br>
           因為一個契機，我們今天在李梅樹紀念館，把新的資訊技術回饋給地方。
@@ -80,7 +81,7 @@
             content: '李梅樹紀念館維基館藏數位開放專案為李梅樹紀念館與社團法人中華民國維基媒體協會共同合作，踏出台灣館聯計畫(GLAM program)的第一步。',
             meta: {
               image: 'https://api.limeishu.org.tw/images/2018/02/19/94bf8b93-bc7d-4e30-8422-68b35ce32276.jpg',
-              link: 'https://limeishu.org.tw/culture/news/5a8a404d34c8a8787241bb56/index.html'
+              link: 'https://limeishu.org.tw/culture/post/5a8a404d34c8a8787241bb56'
             }
           },
           {
