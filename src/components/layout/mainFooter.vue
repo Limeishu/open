@@ -56,31 +56,41 @@ export default {
         'zh-TW': [
           {
             name: '隱私權政策',
-            link: 'https://limeishu.org.tw/about/privacy'
+            link: '/about/privacy'
           },
           {
-            name: 'Cookies',
-            link: 'https://limeishu.org.tw/about/privacy#cookie'
+            name: '支持我們',
+            link: '/about/sponsor'
           }
         ],
-        'en-US': [
+        'en': [
           {
             name: 'Privacy Notice',
-            link: 'https://limeishu.org.tw/about/privacy'
+            link: '/about/privacy'
           },
           {
-            name: 'Cookies',
-            link: 'https://limeishu.org.tw/about/privacy#cookie'
+            name: 'Sponsor',
+            link: '/about/sponsor'
           }
         ],
         'ja': [
           {
             name: 'プライバシー通知',
-            link: 'https://limeishu.org.tw/about/privacy'
+            link: '/about/privacy'
           },
           {
-            name: 'Cookies',
-            link: 'https://limeishu.org.tw/about/privacy#cookie'
+            name: 'スポンサー',
+            link: '/about/sponsor'
+          }
+        ],
+        'ko': [
+          {
+            name: '개인 정보 보호 알림',
+            link: '/about/privacy'
+          },
+          {
+            name: '스폰서',
+            link: '/about/sponsor'
           }
         ]
       },
@@ -92,7 +102,7 @@ export default {
     }
   },
   methods: {
-    openMainSite() {
+    openMainSite () {
       window.open('https://limeishu.org.tw')
     }
   }
